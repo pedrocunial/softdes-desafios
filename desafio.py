@@ -1,3 +1,3 @@
-def desafio1(n):
-    #return 0
-    return n
+def desafio1(number):
+    ''' first challenge, returns the sent number '''
+    return number
