@@ -1,9 +1,9 @@
-.. desafios documentation master file, created by
-   sphinx-quickstart on Tue Sep 10 08:27:57 2019.
+.. Desafios documentation master file, created by
+   sphinx-quickstart on Thu Sep 26 08:36:53 2019.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to desafios's documentation!
+Welcome to Desafios's documentation!
 ====================================
 
 .. toctree::
