@@ -17,8 +17,12 @@ DBNAME = './quiz.db'
 
 
 def lambda_handler(event, context):
-    '''
-    ora ora ora a lamba function handler that handles lambdas
+    '''Lambda handler
+
+    handles lambdas wow
+
+    :param event: event... duh
+    :param context: context to be used... duh
     '''
     try:
         import json
