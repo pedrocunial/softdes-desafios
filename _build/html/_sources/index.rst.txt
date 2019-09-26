@@ -10,6 +10,9 @@ Welcome to Desafios's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+    apidocs/adduser
+    apidocs/desafio
+    apidocs/softdes
 
 
 Indices and tables
