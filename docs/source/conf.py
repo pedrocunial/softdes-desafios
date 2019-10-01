@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-# Desafios documentation build configuration file, created by
-# sphinx-quickstart on Thu Sep 26 08:36:53 2019.
+# Pedro Cunial documentation build configuration file, created by
+# sphinx-quickstart on Tue Oct  1 08:04:39 2019.
 #
 # This file is execfile()d with the current directory set to its
 # containing dir.
@@ -19,7 +19,8 @@
 #
 import os
 import sys
-sys.path.insert(0, os.path.abspath('./apidocs'))
+sys.path.insert(0, os.path.abspath('../..'))
+sys.setrecursionlimit(1500)
 
 
 # -- General configuration ------------------------------------------------
@@ -32,10 +33,12 @@ sys.path.insert(0, os.path.abspath('./apidocs'))
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = ['sphinx.ext.autodoc',
-    'sphinx.ext.doctest',
-    'sphinx.ext.todo',
+    'sphinx.ext.intersphinx',
+    'sphinx.ext.ifconfig',
     'sphinx.ext.viewcode',
-    'sphinx.ext.githubpages']
+    'sphinx.ext.githubpages',
+    'rinoh.frontend.sphinx',
+    ]
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -50,7 +53,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'Desafios'
+project = 'ServidorSoftDes'
 copyright = '2019, Pedro Cunial'
 author = 'Pedro Cunial'
 
@@ -73,13 +76,13 @@ language = None
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This patterns also effect to html_static_path and html_extra_path
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+exclude_patterns = []
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
 
 # If true, `todo` and `todoList` produce output, else they produce nothing.
-todo_include_todos = True
+todo_include_todos = False
 
 
 # -- Options for HTML output ----------------------------------------------
@@ -116,7 +119,7 @@ html_sidebars = {
 # -- Options for HTMLHelp output ------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'Desafiosdoc'
+htmlhelp_basename = 'PedroCunialdoc'
 
 
 # -- Options for LaTeX output ---------------------------------------------
@@ -143,7 +146,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'Desafios.tex', 'Desafios Documentation',
+    (master_doc, 'PedroCunial.tex', 'Pedro Cunial Documentation',
      'Pedro Cunial', 'manual'),
 ]
 
@@ -153,7 +156,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'desafios', 'Desafios Documentation',
+    (master_doc, 'pedrocunial', 'Pedro Cunial Documentation',
      [author], 1)
 ]
 
@@ -164,10 +167,34 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'Desafios', 'Desafios Documentation',
-     author, 'Desafios', 'One line description of project.',
+    (master_doc, 'PedroCunial', 'Pedro Cunial Documentation',
+     author, 'PedroCunial', 'One line description of project.',
      'Miscellaneous'),
 ]
 
 
 
+# -- Options for Epub output ----------------------------------------------
+
+# Bibliographic Dublin Core info.
+epub_title = project
+epub_author = author
+epub_publisher = author
+epub_copyright = copyright
+
+# The unique identifier of the text. This can be a ISBN number
+# or the project homepage.
+#
+# epub_identifier = ''
+
+# A unique identification for the text.
+#
+# epub_uid = ''
+
+# A list of files that should not be packed into the epub file.
+epub_exclude_files = ['search.html']
+
+
+
+# Example configuration for intersphinx: refer to the Python standard library.
+intersphinx_mapping = {'https://docs.python.org/': None}
