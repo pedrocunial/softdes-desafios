@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 """
-H1 -- Servidor De Desafios
+Servidor De Desafios
 **************************
 
-H2 -- O que é?
+O que é?
 ==========================
 
 Trata-se de um projeto desenvolvido pelo professor Raul Ikeda
@@ -14,7 +14,7 @@ O projeto possibilita que os alunos desenvolvam ou façam o upload
 de soluções para problemas de sala de aula, o qual, por sua vez
 é rodado em um lambda da AWS onde é avaliado.
 
-H2 -- Instalação
+Instalação
 ==========================
 
 O projeto foi realizado em Python 3, utilizando uma DB em SQLite 3
@@ -25,7 +25,7 @@ Além disso, o projeto depende das seguintes bibliotecas externas:
 * Flask
 * flash_httpauth
 
-H2 -- Uso
+Uso
 ==========================
 
 Por fim, para executar o projeto, é necessário criar um arquivo
