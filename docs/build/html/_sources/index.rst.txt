@@ -43,7 +43,7 @@ Documentação
    :caption: Contents:
 
 
-ServidorSoftDes main
+ServidorSoftDes
 =======================================
 .. automodule:: softdes
     :members:
